@@ -213,6 +213,9 @@ HLT
 ## Output :
 ![IMG-20250829-WA0018](https://github.com/user-attachments/assets/3898b85b-879f-4993-920d-4a92e21a7607)
 
+## Truth Table for LOGIC GATES :
+![TT](https://github.com/user-attachments/assets/aedbc752-c356-43e2-a72b-b41a39247a6d)
+
 ## Result :
 Thus the program is verified and the desired output is got.
 
