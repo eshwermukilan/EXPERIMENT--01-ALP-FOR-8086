@@ -1,7 +1,6 @@
-# EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+# Name : ESHWER M
+# Roll no : 212224040086
+# Date of experiment : 29-08-2025
 
 
 
@@ -75,28 +74,147 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 
-## Programs for arithmetic  operations
+## Programs for arithmetic  operations :
 
-## Addition  of 8 bit ALP 
+## Addition of 8 bit ALP : 
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+ADD AX,BX
+JNC Loop
+INC CL
+Loop:
+MOV [3005H],AX
+MOV [3007H],CL
+HLT
+```
+## Output :  
+![IMG-20250829-WA0006](https://github.com/user-attachments/assets/c86a5d8d-7107-4ec9-83ea-7fba0f830660)
 
+## Subtraction of 8 bit numbers  ALP : 
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+SUB AX,BX
+JNC Loop
+INC CL  
+NOT AX
+INC AX
+Loop:
+MOV [3005H],AX
+MOV [3007H],CL
+HLT
+```
+## Output:
+![IMG-20250829-WA0007](https://github.com/user-attachments/assets/868040e3-3577-49b4-a30b-5a555d97b95d)
 
+## Multiplication ALP:
+```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+MUL BX
+MOV [3005H],AX
+MOV [3007H],DX
+HLT
+```
+## Output :
+![IMG-20250829-WA0009](https://github.com/user-attachments/assets/e5804be9-0f00-467e-9576-189ee1d56961)
 
-## Output  
- 
-## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
- ## Output  
+## Division ALP :
+```
+MOV CL,00
+MOV AX,[3001H]
+MOV BX,[3003H]
+DIV BX
+MOV [3005H],AX
+MOV [3007H],DX
+HLT
+```
+## Output :
+![IMG-20250829-WA0006](https://github.com/user-attachments/assets/62ab8b2a-d3c5-446b-8872-c81ca66b8fae)
 
+## AND ALP :
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+AND AX,BX
+MOV [3005H],AX
+HLT
+```
+## Output :
+![and](https://github.com/user-attachments/assets/d5e6655a-3541-4176-97a1-a0dafa5a6515)
 
-## Division alp 
+## OR ALP :
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+OR AX,BX
+MOV [3005H],AX
+HLT
+```
+## Output :
+<img width="1643" height="1009" alt="Screenshot 2025-08-29 153434" src="https://github.com/user-attachments/assets/20bedf3c-7d1f-4453-851e-31225aa4d384" />
 
-## Output  
+## NOT ALP :
+```
+MOV AX,[3001H]
+NOT AX
+MOV [3003H],AX
+HLT
+```
+## Output :
+![IMG-20250829-WA0016](https://github.com/user-attachments/assets/1b36c542-e28d-4e8d-8b83-80e8fb607aec)
 
+## NAND ALP :
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+AND AX,BX
+NOT AX
+MOV [3005H],AX
+HLT
+```
+## Output :
+<img width="1591" height="986" alt="Screenshot 2025-08-29 153943" src="https://github.com/user-attachments/assets/c0de3ea0-46be-4c32-9c8b-b99da278ad4d" />
+
+## NOR ALP :
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+OR AX,BX
+NOT AX
+MOV [3005H],AX
+HLT
+```
+## Output :
+<img width="1587" height="984" alt="Screenshot 2025-08-29 153558" src="https://github.com/user-attachments/assets/89262610-0b94-49b3-9621-0697b0746ac3" />
+
+## XOR ALP :
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+XOR AX,BX
+MOV [3005H],AX
+HLT
+```
+## Output :
+![IMG-20250829-WA0017](https://github.com/user-attachments/assets/a68ed9db-0445-4937-9743-16311d385d0d)
+
+## XNOR ALP :
+```
+MOV AX,[3001H]
+MOV BX,[3003H]
+XOR AX,BX
+NOT AX
+MOV [3005H],AX
+HLT
+```
+## Output :
+![IMG-20250829-WA0018](https://github.com/user-attachments/assets/3898b85b-879f-4993-920d-4a92e21a7607)
 
 ## Result :
- 
+Thus the program is verified and the desired output is got.
 
 
 
